@@ -28,11 +28,7 @@ public class CustomerController {
 	@Autowired
 	CustomerService serviceLayer;
 	
-	@GetMapping("/")
-    public String redirectToAsent() {
-        return "redirect:/asent";
-    }
-	
+
 	@GetMapping("")
 	public String welcomePage() {
 		return "welcome";
